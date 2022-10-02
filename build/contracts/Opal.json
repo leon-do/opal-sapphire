@@ -23,7 +23,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -36,7 +37,8 @@
       "name": "deposit",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -54,7 +56,8 @@
       "name": "withdraw",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_preimage\",\"type\":\"uint256\"}],\"name\":\"hashPreimage\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_preimage\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Opal.sol\":\"Opal\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Opal.sol\":{\"keccak256\":\"0x60eb1722b743675e790d8b3324d07b369a737317a8c20bf4276fa5c21b001970\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://19df93b51d2e255bb99b836c335ff13cfd6a20e0d380bf5441036470bf98a6e6\",\"dweb:/ipfs/QmZrQ1dt5ujuYACLCLqNzGyWmytnTWJyQD6HK4QXZi6b1C\"]}},\"version\":1}",
@@ -5028,9 +5031,17 @@
     "name": "solc",
     "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "23295": {
+      "events": {},
+      "links": {},
+      "address": "0xDF2722D75c379e1FD37628A2D8ded14842AeD961",
+      "transactionHash": "0xc7fc2c530587dec41d2d3e36eaccf61c310e2eda7e668856eb3f5c148eebbbd7"
+    }
+  },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-10-02T04:12:04.824Z",
+  "updatedAt": "2022-10-02T04:17:22.928Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
