@@ -23,14 +23,10 @@ contract Opal {
         // get balance from preimage
         uint256 balance = balances[keccak256(abi.encodePacked(_preimage))];
         require(balance > 0, "Balance is zero");
-        // calculate vaue to send
-        uint256 value = (balance * 9995) / 10000;
-        // calculate fee to send
-        uint256 fee = (balance * 5) / 10000;
         // zero balance
         balances[keccak256(abi.encodePacked(_preimage))] = 0;
         // Send value to account
-        payable(_to).transfer(value);
+        payable(_to).transfer(balance);
         // Send fee to owner
         payable(owner).transfer(fee);
     }
