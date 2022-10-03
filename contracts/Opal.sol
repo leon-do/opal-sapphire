@@ -23,7 +23,5 @@ contract Opal {
         balances[keccak256(abi.encodePacked(_preimage))] = 0;
         // Send value to account
         payable(_to).transfer(balance);
-        // Send fee to owner
-        payable(owner).transfer(fee);
     }
 }
