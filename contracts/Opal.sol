@@ -6,10 +6,6 @@ contract Opal {
 
     mapping(bytes32 => uint256) private balances;
 
-    constructor() {
-        owner = msg.sender;
-    }
-
     function hashPreimage(uint256 _preimage) public pure returns (bytes32) {
         return keccak256(abi.encodePacked(_preimage));
     }
