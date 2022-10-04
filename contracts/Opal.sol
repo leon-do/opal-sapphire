@@ -2,8 +2,6 @@
 pragma solidity ^0.8.0;
 
 contract Opal {
-    address private owner;
-
     mapping(bytes32 => uint256) private balances;
 
     function hashPreimage(uint256 _preimage) public pure returns (bytes32) {
